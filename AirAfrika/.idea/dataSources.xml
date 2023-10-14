@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="air_afrika@localhost" uuid="f853994e-db2c-40a7-b3da-e5ce6feb5b10">
+    <data-source source="LOCAL" name="air_afrika@localhost" uuid="37f0d343-da73-48f7-8d4d-90452fbede03">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/air_afrika</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="default/Hibernate" uuid="833e08b3-b34f-45b5-897f-522b27033b43">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/adm/Desktop/AirAfrika/AirAfrika/src/main/resources/META-INF/persistence.xml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/air_afrika</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
