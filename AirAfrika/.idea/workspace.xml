@@ -10,14 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d18cf12d-36dc-4b35-806c-06c7434c7486" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/833e08b3-b34f-45b5-897f-522b27033b43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/833e08b3-b34f-45b5-897f-522b27033b43.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/Testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/utils/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/utils/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +180,7 @@
       <workItem from="1697191181884" duration="12989000" />
       <workItem from="1697322436573" duration="4685000" />
       <workItem from="1697362542320" duration="2799000" />
-      <workItem from="1697367971665" duration="5880000" />
+      <workItem from="1697367971665" duration="7415000" />
     </task>
     <servers />
   </component>
