@@ -4,5 +4,18 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
     <persistence-unit name="default">
+        <class>com.youcode.airafrika.models.Admin</class>
+        <class>com.youcode.airafrika.models.Client</class>
+        <class>com.youcode.airafrika.models.Companion</class>
+        <class>com.youcode.airafrika.models.Extra</class>
+        <class>com.youcode.airafrika.models.Flight</class>
+        <class>com.youcode.airafrika.models.Reservation</class>
+        <class>com.youcode.airafrika.models.Stopover</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/air_afrika"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value="root"/>
+        </properties>
     </persistence-unit>
 </persistence>

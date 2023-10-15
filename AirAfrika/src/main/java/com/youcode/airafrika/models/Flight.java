@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Flight {
@@ -38,6 +40,14 @@ public class Flight {
     @Basic
     @Column(name = "price")
     private double price;
+
+    @ManyToMany
+    @JoinTable(name = "stopover_flight",
+            joinColumns = @JoinColumn(name = "flight_id"),
+            inverseJoinColumns = @JoinColumn(name = "stopover_id")
+    )
+    private Set<Stopover> stopovers = new HashSet<>();
+
 
     public String getUuid() {
         return uuid;
@@ -113,6 +123,10 @@ public class Flight {
 
     public double getPrice() {
         return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
     }
 
     public void setPrice(double price) {

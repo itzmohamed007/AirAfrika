@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>761</IntrospectionStateNumber>
+      <IntrospectionStateNumber>782</IntrospectionStateNumber>
       <ServerVersion>16.0</ServerVersion>
-      <StartupTime>1696879658</StartupTime>
+      <StartupTime>1697301578</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -801,7 +801,7 @@ false Zulu
 14643||10|C|G
 14643||-9223372036854775808|U|G
 14643||10|U|G</Grants>
-      <IntrospectionStateNumber>761</IntrospectionStateNumber>
+      <IntrospectionStateNumber>782</IntrospectionStateNumber>
       <ObjectId>16398</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -810,50 +810,50 @@ false Zulu
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <role id="4" parent="1" name="pg_database_owner">
+    <role id="4" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
+    </role>
+    <role id="5" parent="1" name="pg_create_subscription">
+      <ObjectId>6304</ObjectId>
+    </role>
+    <role id="6" parent="1" name="pg_database_owner">
       <ObjectId>6171</ObjectId>
     </role>
-    <role id="5" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
+    <role id="7" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
     </role>
-    <role id="6" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_monitor">
+    <role id="8" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <RoleGrants>3374
 3375
 3377</RoleGrants>
     </role>
-    <role id="8" parent="1" name="pg_read_all_settings">
+    <role id="9" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_read_all_stats">
+    <role id="11" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="10" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="11" parent="1" name="pg_read_server_files">
+    <role id="12" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
-    </role>
-    <role id="13" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
-    </role>
-    <role id="14" parent="1" name="pg_signal_backend">
+    <role id="13" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="15" parent="1" name="pg_checkpoint">
-      <ObjectId>4544</ObjectId>
+    <role id="14" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
     </role>
-    <role id="16" parent="1" name="pg_use_reserved_connections">
+    <role id="15" parent="1" name="pg_use_reserved_connections">
       <ObjectId>4550</ObjectId>
     </role>
-    <role id="17" parent="1" name="pg_create_subscription">
-      <ObjectId>6304</ObjectId>
+    <role id="16" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="17" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
     </role>
     <role id="18" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
@@ -4225,34 +4225,308 @@ false Zulu
     <schema id="264" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>761</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-10-13.11:27:26.849</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-10-13.10:27:27</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>782</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-10-15.18:20:45.376</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-10-15.17:20:46</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="265" parent="264" name="users_id_seq">
-      <DasType>integer|0s</DasType>
-      <ObjectId>16454</ObjectId>
-      <SequenceIdentity>1(2)</SequenceIdentity>
-      <StartValue>1</StartValue>
-      <StateNumber>759</StateNumber>
+    <object-type id="265" parent="264" name="gender">
+      <Labels>Male
+Femail</Labels>
+      <ObjectId>16504</ObjectId>
+      <StateNumber>770</StateNumber>
+      <SubCategory>enum</SubCategory>
+      <SubKind>enum</SubKind>
       <OwnerName>postgres</OwnerName>
-    </sequence>
-    <table id="266" parent="264" name="flight">
+    </object-type>
+    <object-type id="266" parent="264" name="reservation_type">
+      <Labels>Confirmed
+Canceled</Labels>
+      <ObjectId>16481</ObjectId>
+      <StateNumber>768</StateNumber>
+      <SubCategory>enum</SubCategory>
+      <SubKind>enum</SubKind>
+      <OwnerName>postgres</OwnerName>
+    </object-type>
+    <table id="267" parent="264" name="admin">
+      <ObjectId>16471</ObjectId>
+      <StateNumber>766</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="268" parent="264" name="client">
+      <ObjectId>16463</ObjectId>
+      <StateNumber>769</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="269" parent="264" name="companion">
+      <ObjectId>16509</ObjectId>
+      <StateNumber>772</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="270" parent="264" name="extra">
+      <ObjectId>16522</ObjectId>
+      <StateNumber>775</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="271" parent="264" name="flight">
       <ObjectId>16445</ObjectId>
-      <StateNumber>755</StateNumber>
+      <StateNumber>769</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="267" parent="264" name="users">
-      <ObjectId>16455</ObjectId>
-      <StateNumber>759</StateNumber>
+    <table id="272" parent="264" name="reservation">
+      <ObjectId>16485</ObjectId>
+      <StateNumber>769</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="268" parent="266" name="uuid">
+    <table id="273" parent="264" name="reservation_extra">
+      <ObjectId>16530</ObjectId>
+      <StateNumber>775</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="274" parent="264" name="stopover">
+      <ObjectId>16546</ObjectId>
+      <StateNumber>780</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="275" parent="264" name="stopover_flight">
+      <ObjectId>16554</ObjectId>
+      <StateNumber>780</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="276" parent="267" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <DefaultExpression>gen_random_uuid()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>766</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="277" parent="267" name="first_name">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>766</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="278" parent="267" name="last_name">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>766</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="279" parent="267" name="email">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>766</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="280" parent="267" name="phone">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>766</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="281" parent="267" name="birth_date">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>766</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="282" parent="267" name="password">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StateNumber>766</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="283" parent="267" name="admin_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16477</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>766</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="284" parent="267" name="admin_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16478</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>766</StateNumber>
+      <UnderlyingIndexId>16477</UnderlyingIndexId>
+    </key>
+    <column id="285" parent="268" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <DefaultExpression>gen_random_uuid()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>765</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="286" parent="268" name="first_name">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>765</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="287" parent="268" name="last_name">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>765</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="288" parent="268" name="email">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>765</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="289" parent="268" name="phone">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>765</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="290" parent="268" name="birth_date">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>765</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="291" parent="268" name="client_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16469</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>765</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="292" parent="268" name="client_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16470</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>765</StateNumber>
+      <UnderlyingIndexId>16469</UnderlyingIndexId>
+    </key>
+    <column id="293" parent="269" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <DefaultExpression>gen_random_uuid()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>771</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="294" parent="269" name="first_name">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>771</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="295" parent="269" name="last_name">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>771</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="296" parent="269" name="gender">
+      <DasType>gender|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>771</StateNumber>
+      <TypeId>16504</TypeId>
+    </column>
+    <column id="297" parent="269" name="birth_date">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>771</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="298" parent="269" name="reservation_id">
+      <DasType>uuid|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>772</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <foreign-key id="299" parent="269" name="companion_reservation_id_fkey">
+      <ColNames>reservation_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16517</ObjectId>
+      <StateNumber>772</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16485</RefTableId>
+    </foreign-key>
+    <index id="300" parent="269" name="companion_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16515</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>771</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="301" parent="269" name="companion_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16516</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>771</StateNumber>
+      <UnderlyingIndexId>16515</UnderlyingIndexId>
+    </key>
+    <column id="302" parent="270" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <DefaultExpression>gen_random_uuid()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>773</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="303" parent="270" name="name">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>773</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="304" parent="270" name="extra_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16528</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>773</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="305" parent="270" name="extra_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16529</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>773</StateNumber>
+      <UnderlyingIndexId>16528</UnderlyingIndexId>
+    </key>
+    <column id="306" parent="271" name="uuid">
       <DasType>uuid|0s</DasType>
       <DefaultExpression>gen_random_uuid()</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4260,70 +4534,70 @@ false Zulu
       <StateNumber>755</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="269" parent="266" name="departure_city">
+    <column id="307" parent="271" name="departure_city">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>755</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="270" parent="266" name="arrival_city">
+    <column id="308" parent="271" name="arrival_city">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>755</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="271" parent="266" name="departure_date">
+    <column id="309" parent="271" name="departure_date">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>755</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="272" parent="266" name="arrival_date">
+    <column id="310" parent="271" name="arrival_date">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>755</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="273" parent="266" name="departure_time">
+    <column id="311" parent="271" name="departure_time">
       <DasType>time(0)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>755</StateNumber>
       <TypeId>1083</TypeId>
     </column>
-    <column id="274" parent="266" name="arrival_time">
+    <column id="312" parent="271" name="arrival_time">
       <DasType>time(0)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StateNumber>755</StateNumber>
       <TypeId>1083</TypeId>
     </column>
-    <column id="275" parent="266" name="seats_number">
+    <column id="313" parent="271" name="seats_number">
       <DasType>integer|0s</DasType>
       <DefaultExpression>30</DefaultExpression>
       <Position>8</Position>
       <StateNumber>755</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="276" parent="266" name="description">
+    <column id="314" parent="271" name="description">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
       <StateNumber>755</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="277" parent="266" name="price">
+    <column id="315" parent="271" name="price">
       <DasType>double precision|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StateNumber>755</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <index id="278" parent="266" name="flight_pkey">
+    <index id="316" parent="271" name="flight_pkey">
       <ColNames>uuid</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16452</ObjectId>
@@ -4332,51 +4606,228 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="279" parent="266" name="flight_pkey">
+    <key id="317" parent="271" name="flight_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16453</ObjectId>
       <Primary>1</Primary>
       <StateNumber>755</StateNumber>
       <UnderlyingIndexId>16452</UnderlyingIndexId>
     </key>
-    <column id="280" parent="267" name="id">
-      <DasType>integer|0s</DasType>
-      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+    <column id="318" parent="272" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <DefaultExpression>gen_random_uuid()</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>759</StateNumber>
-      <SequenceId>16454</SequenceId>
-      <TypeId>23</TypeId>
+      <StateNumber>769</StateNumber>
+      <TypeId>2950</TypeId>
     </column>
-    <column id="281" parent="267" name="name">
-      <DasType>text|0s</DasType>
+    <column id="319" parent="272" name="date">
+      <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>759</StateNumber>
-      <TypeId>25</TypeId>
+      <StateNumber>769</StateNumber>
+      <TypeId>1082</TypeId>
     </column>
-    <column id="282" parent="267" name="email">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
+    <column id="320" parent="272" name="status">
+      <DasType>reservation_type|0s</DasType>
+      <DefaultExpression>&apos;Confirmed&apos;::reservation_type</DefaultExpression>
       <Position>3</Position>
-      <StateNumber>759</StateNumber>
-      <TypeId>25</TypeId>
+      <StateNumber>769</StateNumber>
+      <TypeId>16481</TypeId>
     </column>
-    <index id="283" parent="267" name="users_pkey">
-      <ColNames>id</ColNames>
+    <column id="321" parent="272" name="seats_number">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>30</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>769</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="322" parent="272" name="flight_id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>769</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="323" parent="272" name="client_id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>769</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <foreign-key id="324" parent="272" name="fk_flight_id">
+      <ColNames>flight_id</ColNames>
+      <ObjectId>16493</ObjectId>
+      <StateNumber>769</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16445</RefTableId>
+    </foreign-key>
+    <foreign-key id="325" parent="272" name="fk_client_id">
+      <ColNames>client_id</ColNames>
+      <ObjectId>16498</ObjectId>
+      <StateNumber>769</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16463</RefTableId>
+    </foreign-key>
+    <index id="326" parent="272" name="reservation_pkey">
+      <ColNames>uuid</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16461</ObjectId>
+      <ObjectId>16491</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>759</StateNumber>
+      <StateNumber>769</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="284" parent="267" name="users_pkey">
+    <key id="327" parent="272" name="reservation_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16462</ObjectId>
+      <ObjectId>16492</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>759</StateNumber>
-      <UnderlyingIndexId>16461</UnderlyingIndexId>
+      <StateNumber>769</StateNumber>
+      <UnderlyingIndexId>16491</UnderlyingIndexId>
+    </key>
+    <column id="328" parent="273" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <DefaultExpression>gen_random_uuid()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>775</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="329" parent="273" name="reservation_id">
+      <DasType>uuid|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>775</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="330" parent="273" name="extra_id">
+      <DasType>uuid|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>775</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <foreign-key id="331" parent="273" name="reservation_extra_reservation_id_fkey">
+      <ColNames>reservation_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16536</ObjectId>
+      <StateNumber>775</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16485</RefTableId>
+    </foreign-key>
+    <foreign-key id="332" parent="273" name="reservation_extra_extra_id_fkey">
+      <ColNames>extra_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16541</ObjectId>
+      <StateNumber>775</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16522</RefTableId>
+    </foreign-key>
+    <index id="333" parent="273" name="reservation_extra_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16534</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>775</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="334" parent="273" name="reservation_extra_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16535</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>775</StateNumber>
+      <UnderlyingIndexId>16534</UnderlyingIndexId>
+    </key>
+    <column id="335" parent="274" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <DefaultExpression>gen_random_uuid()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>779</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="336" parent="274" name="duration">
+      <DasType>double precision|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>777</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="337" parent="274" name="city">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>777</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="338" parent="274" name="stopover_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16552</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>779</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="339" parent="274" name="stopover_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16553</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>779</StateNumber>
+      <UnderlyingIndexId>16552</UnderlyingIndexId>
+    </key>
+    <column id="340" parent="275" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <DefaultExpression>gen_random_uuid()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>780</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="341" parent="275" name="stopover_id">
+      <DasType>uuid|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>780</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="342" parent="275" name="flight_id">
+      <DasType>uuid|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>780</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <foreign-key id="343" parent="275" name="stopover_flight_stopover_id_fkey">
+      <ColNames>stopover_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16560</ObjectId>
+      <StateNumber>780</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16546</RefTableId>
+    </foreign-key>
+    <foreign-key id="344" parent="275" name="stopover_flight_flight_id_fkey">
+      <ColNames>flight_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16565</ObjectId>
+      <StateNumber>780</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16445</RefTableId>
+    </foreign-key>
+    <index id="345" parent="275" name="stopover_flight_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16558</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>780</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="346" parent="275" name="stopover_flight_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16559</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>780</StateNumber>
+      <UnderlyingIndexId>16558</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

@@ -3,15 +3,13 @@ package com.youcode.airafrika.models;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public abstract class User {
+public class Companion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "uuid")
-    private UUID uuid;
+    private String uuid;
     @Basic
     @Column(name = "first_name")
     private String firstName;
@@ -19,20 +17,20 @@ public abstract class User {
     @Column(name = "last_name")
     private String lastName;
     @Basic
-    @Column(name = "email")
-    private String email;
-    @Basic
-    @Column(name = "phone")
-    private String phone;
+    @Column(name = "gender")
+    private Gender gender;
     @Basic
     @Column(name = "birth_date")
     private LocalDate birthDate;
+    @ManyToOne
+    @Column(name = "reservation_id")
+    private Reservation reservation;
 
-    public UUID getUuid() {
+    public String getUuid() {
         return uuid;
     }
 
-    public void setUuid(UUID uuid) {
+    public void setUuid(String uuid) {
         this.uuid = uuid;
     }
 
@@ -52,20 +50,12 @@ public abstract class User {
         this.lastName = lastName;
     }
 
-    public String getEmail() {
-        return email;
+    public Gender getGender() {
+        return gender;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     public LocalDate getBirthDate() {
@@ -74,5 +64,13 @@ public abstract class User {
 
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public Object getReservation() {
+        return reservation;
+    }
+
+    public void setReservation(Reservation reservation) {
+        this.reservation = reservation;
     }
 }
