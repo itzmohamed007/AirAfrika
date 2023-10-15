@@ -1,18 +1,14 @@
 package com.youcode.airafrika.models;
 
 import jakarta.persistence.*;
-
 @Entity
-@Table(name = "users", schema = "public", catalog = "air_afrika")
+@Table(name = "users")
 public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "id")
     private int id;
-    @Basic
     @Column(name = "name")
     private String name;
-    @Basic
     @Column(name = "email")
     private String email;
 
