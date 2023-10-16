@@ -10,20 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d18cf12d-36dc-4b35-806c-06c7434c7486" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Companion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Extra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Reservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/ReservationStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Stopover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/ExtraService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/CompanionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/ReservationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/StopoverService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03/storage_v2/_src_/database/air_afrika.Bzj07g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03/storage_v2/_src_/database/air_afrika.Bzj07g/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/UserService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +193,8 @@
       <workItem from="1697191181884" duration="12989000" />
       <workItem from="1697322436573" duration="4685000" />
       <workItem from="1697362542320" duration="2799000" />
-      <workItem from="1697367971665" duration="10381000" />
+      <workItem from="1697367971665" duration="10828000" />
+      <workItem from="1697443412908" duration="2365000" />
     </task>
     <servers />
   </component>
