@@ -8,7 +8,6 @@ import java.util.UUID;
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class User {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "uuid")
     private UUID uuid;

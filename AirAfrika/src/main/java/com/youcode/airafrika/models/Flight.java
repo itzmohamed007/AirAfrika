@@ -132,4 +132,17 @@ public class Flight {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public static void updateFlight(Flight original, Flight updated) {
+        updated.setDepartureCity(original.getDepartureCity());
+        updated.setArrivalCity(original.getArrivalCity());
+        updated.setDepartureDate(original.getDepartureDate());
+        updated.setArrivalDate(original.getArrivalDate());
+        updated.setDepartureTime(original.getDepartureTime());
+        updated.setArrivalTime(original.getArrivalTime());
+        updated.setSeatsNumber(original.getSeatsNumber());
+        updated.setDescription(original.getDescription());
+        updated.setPrice(original.getPrice());
+    }
 }
+

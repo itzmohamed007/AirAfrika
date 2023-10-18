@@ -15,10 +15,13 @@ public class HibernateUtil {
                     .build();
             try {
                 sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
+                System.out.println("session created successfully");
             }
             catch (Exception e) {
                 // The registry would be destroyed by the SessionFactory, but we had trouble building the SessionFactory
                 // so destroy it manually.
+                System.out.println("something went wrong while creating session factory");
+                System.out.println(e.getMessage());
                 StandardServiceRegistryBuilder.destroy( registry );
             }
         }
