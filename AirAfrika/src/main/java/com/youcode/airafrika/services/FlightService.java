@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 
 import java.util.List;
+import java.util.UUID;
 
 public class FlightService {
     private final SessionFactory sessionFactory;
@@ -18,18 +19,18 @@ public class FlightService {
     public boolean createFlight(Flight flight) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-//            session.save(flight); the save method is deprecated (replaced with more efficient methods) because its behavior can be ambiguous sometimes
-            session.persist(flight);
+            session.save(flight);
             session.getTransaction().commit();
             return true;
         } catch (Exception e) {
             System.out.println("something went wrong while inserting new flight record");
             System.out.println(e.getMessage());
+            e.printStackTrace();
             return false;
         }
     }
 
-    public Flight getFlight(String uuid) {
+    public Flight getFlight(UUID uuid) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
             Flight flight = session.get(Flight.class, uuid);
@@ -38,30 +39,29 @@ public class FlightService {
         } catch (Exception e) {
             System.out.println("something went wrong while fetching flight record");
             System.out.println(e.getMessage());
+            e.printStackTrace();
             return null;
         }
     }
 
-    public boolean updateFlight(Flight newFlight, String uuid) {
+    public boolean updateFlight(Flight newFlight) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-            Flight oldFlight = session.get(Flight.class, uuid);
-            if(oldFlight == null) {
+            Flight oldFlight = session.get(Flight.class, newFlight.getUuid());
+            if(oldFlight == null)
                 return false;
-            }
-            Flight.updateFlight(oldFlight, newFlight);
             session.merge(newFlight);
-
             session.getTransaction().commit();
             return true;
         } catch (Exception e) {
             System.out.println("something went wrong while updating flight record");
             System.out.println(e.getMessage());
+            e.printStackTrace();
             return false;
         }
     }
 
-    public boolean deleteFlight(String uuid) {
+    public boolean deleteFlight(UUID uuid) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
             Flight flight = session.get(Flight.class, uuid);

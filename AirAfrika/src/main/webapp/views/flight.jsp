@@ -11,7 +11,15 @@
     <title>Here is your flight</title>
 </head>
 <body>
-    <p>Flight Informations:</p>
-    <p><?></p>
+    <p>${flight.uuid}</p>
+    <p>${flight.departureCity}</p>
+    <p>${flight.arrivalCity}</p>
+    <p>${flight.departureDate}</p>
+    <p>${flight.arrivalDate}</p>
+    <p>${flight.departureTime}</p>
+    <p>${flight.arrivalTime}</p>
+    <p>${flight.seatsNumber}</p>
+    <p>${flight.price}</p>
+    <p>${flight.description}</p>
 </body>
 </html>

@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.UUID;
 
 @WebServlet(name="/FlightServlet", value="/flight")
 public class FlightServlet extends HttpServlet {
@@ -25,23 +26,29 @@ public class FlightServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if(action == null) {
-            // not action specified => return all flights
-            List<Flight> flights = flightService.getAll();
-            request.setAttribute("flights", flights);
-            request.getRequestDispatcher("/views/flights.jsp").forward(request, response);
-        } else if(action.equals("view")) {
-            // action specified => return wanted flight
-            String uuid = request.getParameter("uuid");
-            Flight flight = flightService.getFlight(uuid);
-            if(flight != null) {
-                request.setAttribute("flight", flight);
-                request.getRequestDispatcher("/views/flight.jsp").forward(request, response);
-            } else {
-                response.sendRedirect(request.getContextPath() + "/flights");
+            action = "list";
+        }
+        switch (action) {
+            case "list": {
+                List<Flight> flights = flightService.getAll();
+                request.setAttribute("flights", flights);
+                request.getRequestDispatcher("/views/flights.jsp").forward(request, response);
+                break;
             }
-        } else {
-            // bad request
-            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+            case "view": {
+                String uuid = request.getParameter("uuid");
+                Flight flight = flightService.getFlight(UUID.fromString(uuid));
+                if(flight != null) {
+                    request.setAttribute("flight", flight);
+                    request.getRequestDispatcher("/views/flight.jsp").forward(request, response);
+                } else {
+                    response.sendRedirect(request.getContextPath() + "/index");
+                }
+                break;
+            }
+            default:
+                response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+                break;
         }
     }
 }

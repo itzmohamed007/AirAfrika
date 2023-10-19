@@ -1,18 +1,21 @@
 package com.youcode.airafrika.models;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.Generated;
+import org.hibernate.annotations.GenerationTime;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @Entity
 public class Flight {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "uuid")
-    private String uuid;
+    @GeneratedValue
+    private UUID uuid;
     @Basic
     @Column(name = "departure_city")
     private String departureCity;
@@ -48,12 +51,28 @@ public class Flight {
     )
     private Set<Stopover> stopovers = new HashSet<>();
 
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "uuid=" + uuid +
+                ", departureCity='" + departureCity + '\'' +
+                ", arrivalCity='" + arrivalCity + '\'' +
+                ", departureDate=" + departureDate +
+                ", arrivalDate=" + arrivalDate +
+                ", departureTime=" + departureTime +
+                ", arrivalTime=" + arrivalTime +
+                ", seatsNumber=" + seatsNumber +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", stopovers=" + stopovers +
+                '}';
+    }
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 
-    public void setUuid(String uuid) {
+    public void setUuid(UUID uuid) {
         this.uuid = uuid;
     }
 
@@ -133,7 +152,7 @@ public class Flight {
         this.price = price;
     }
 
-    public static void updateFlight(Flight original, Flight updated) {
+    public static void copyFlight(Flight original, Flight updated) {
         updated.setDepartureCity(original.getDepartureCity());
         updated.setArrivalCity(original.getArrivalCity());
         updated.setDepartureDate(original.getDepartureDate());
