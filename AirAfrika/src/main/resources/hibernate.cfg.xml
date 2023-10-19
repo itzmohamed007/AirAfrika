@@ -10,6 +10,14 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <mapping class="com.youcode.airafrika.models.User"/>
+        <mapping class="com.youcode.airafrika.models.Admin"/>
+        <mapping class="com.youcode.airafrika.models.Client"/>
+        <mapping class="com.youcode.airafrika.models.Companion"/>
+        <mapping class="com.youcode.airafrika.models.Extra"/>
+        <mapping class="com.youcode.airafrika.models.ExtraService"/>
+        <mapping class="com.youcode.airafrika.models.Flight"/>
+        <mapping class="com.youcode.airafrika.models.Reservation"/>
+        <mapping class="com.youcode.airafrika.models.Stopover"/>
+
     </session-factory>
 </hibernate-configuration>

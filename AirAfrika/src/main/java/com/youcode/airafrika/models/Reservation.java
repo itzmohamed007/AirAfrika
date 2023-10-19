@@ -22,10 +22,8 @@ public class Reservation {
     @Column(name = "seats_number")
     private int seatsNumber;
     @ManyToOne
-    @Column(name = "flight_id")
     private Flight flight;
     @ManyToOne
-    @Column(name = "client_id")
     private Client client;
 
     @ManyToMany

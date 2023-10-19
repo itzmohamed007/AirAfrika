@@ -4,6 +4,7 @@
     <title>AirAfrika</title>
 </head>
 <body>
-    <h1>Here are all the users</h1>
+    <h1>Hello World</h1>
+    <a href="<%= request.getContextPath()%>/flight">display all flights</a>
 </body>
 </html>

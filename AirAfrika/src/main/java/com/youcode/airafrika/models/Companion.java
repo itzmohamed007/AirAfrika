@@ -23,7 +23,6 @@ public class Companion {
     @Column(name = "birth_date")
     private LocalDate birthDate;
     @ManyToOne
-    @Column(name = "reservation_id")
     private Reservation reservation;
 
     public String getUuid() {

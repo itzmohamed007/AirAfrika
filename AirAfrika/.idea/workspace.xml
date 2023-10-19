@@ -10,20 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d18cf12d-36dc-4b35-806c-06c7434c7486" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Companion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Extra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Reservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/ReservationStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Stopover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03/storage_v2/_src_/database/air_afrika.Bzj07g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03/storage_v2/_src_/database/air_afrika.Bzj07g/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/Testing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/FlightServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/flight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/flight.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -68,14 +60,14 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hibernate__config&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;servlets&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/adm/Desktop/AirAfrika/AirAfrika/src/main/java&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -93,14 +85,26 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Testing">
+    <configuration name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.youcode.airafrika.Testing" />
+      <module name="AirAfrika" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.youcode.airafrika.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.1.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.13" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="AirAfrika:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/AirAfrika_war_exploded" />
+            <option name="CONTEXT_PATH" value="/airafrika" />
           </settings>
         </artifact>
       </deployment>
@@ -182,6 +186,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Testing" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -194,7 +203,12 @@
       <workItem from="1697191181884" duration="12989000" />
       <workItem from="1697322436573" duration="4685000" />
       <workItem from="1697362542320" duration="2799000" />
-      <workItem from="1697367971665" duration="10381000" />
+      <workItem from="1697367971665" duration="10828000" />
+      <workItem from="1697443412908" duration="12692000" />
+      <workItem from="1697480129055" duration="14399000" />
+      <workItem from="1697653273350" duration="4584000" />
+      <workItem from="1697706018845" duration="9280000" />
+      <workItem from="1697724834237" duration="3868000" />
     </task>
     <servers />
   </component>
