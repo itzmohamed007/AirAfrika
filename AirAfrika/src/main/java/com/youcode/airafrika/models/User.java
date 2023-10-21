@@ -27,6 +27,18 @@ public abstract class User {
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "uuid=" + uuid +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", birthDate=" + birthDate +
+                '}';
+    }
+
     public UUID getUuid() {
         return uuid;
     }

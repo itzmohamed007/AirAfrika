@@ -74,6 +74,7 @@ public class FlightService {
         } catch (Exception e) {
             System.out.println("something went wrong while deleting flight record");
             System.out.println(e.getMessage());
+            e.printStackTrace();
             return false;
         }
     }
@@ -89,6 +90,7 @@ public class FlightService {
         } catch (Exception e) {
             System.out.println("something went wrong while fetching flights records");
             System.out.println(e.getMessage());
+            e.printStackTrace();
             return null;
         }
     }
