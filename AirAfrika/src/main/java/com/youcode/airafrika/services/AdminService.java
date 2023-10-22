@@ -4,6 +4,7 @@ import com.youcode.airafrika.models.Admin;
 import com.youcode.airafrika.models.Flight;
 import com.youcode.airafrika.models.User;
 import com.youcode.airafrika.utils.HibernateUtil;
+import com.youcode.airafrika.utils.LocalStorage;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -21,8 +22,10 @@ public class AdminService {
             String hql = "FROM Admin A WHERE A.email = :email";
             Admin admin = session.createQuery(hql, Admin.class).setParameter("email", email).uniqueResult();
             if(admin == null) {
+                LocalStorage.getProperties().setProperty("allowAdmin", "false");
                 return false;
             } else if(admin.getPassword().equals(String.valueOf(password.hashCode()))) {
+                LocalStorage.getProperties().setProperty("allowAdmin", "true");
                 return true;
             }
             session.getTransaction().commit();
