@@ -1,16 +1,18 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> <%-- Created by
-IntelliJ IDEA. User: adm Date: 17-10-2023 Time: 9:35 To change this template use
-File | Settings | File Templates. --%> <%@ page
-contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
   <head>
     <title>Flights List</title>
   </head>
   <body>
     <h1>List of all flights</h1>
+    <a href="<%= request.getContextPath() %>/flight?action=create">Create Flight</a>
+    <br>
+    <a href="<%= request.getContextPath() %>/flight?action=update">Update Flight</a>
+    <br>
     <table border="1">
       <tr>
-        <th>uuid</th>
         <th>departure_city</th>
         <th>arrival_city</th>
         <th>departure_date</th>
@@ -20,10 +22,10 @@ contentType="text/html;charset=UTF-8" language="java" %>
         <th>seats_number</th>
         <th>price</th>
         <th>description</th>
+        <th>operations</th>
       </tr>
       <c:forEach items="${flights}" var="flight">
         <tr>
-          <td>${flight.uuid}</td>
           <td>${flight.departureCity}</td>
           <td>${flight.arrivalCity}</td>
           <td>${flight.departureDate}</td>
@@ -33,8 +35,14 @@ contentType="text/html;charset=UTF-8" language="java" %>
           <td>${flight.seatsNumber}</td>
           <td>${flight.price}</td>
           <td>${flight.description}</td>
+          <td>
+            <button><a href="<%= request.getContextPath()%>/flight?action=update&uuid=${flight.uuid}">update</a></button>
+            <form action="<%= request.getContextPath()%>/flight?action=delete" method="post">
+              <input type="hidden" name="uuid" value="${flight.uuid}">
+              <input type="submit" value="delete">
+            </form>
+          </td>
         </tr>
-        <h1>${flight.uuid}</h1>
       </c:forEach>
     </table>
   </body>

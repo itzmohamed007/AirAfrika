@@ -10,21 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d18cf12d-36dc-4b35-806c-06c7434c7486" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/AdminServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/utils/LocalStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/create-flight.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/update-flight.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37f0d343-da73-48f7-8d4d-90452fbede03.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/success.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/AdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/AdminServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/FlightServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/flight.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/flights.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/flights.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/create-flight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/create-flight.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/flights.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/flights.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/update-flight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/update-flight.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "public",
-    "git-widget-placeholder": "tests",
+    "git-widget-placeholder": "admin",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/Users/adm/Desktop/AirAfrika/AirAfrika/src/main/java",
     "list.type.of.created.stylesheet": "CSS",
@@ -81,7 +77,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -96,6 +92,7 @@
       <recent name="C:\Users\adm\Desktop\AirAfrika\AirAfrika\src\main\resources" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="" />
       <recent name="com.youcode.airafrika.models" />
       <recent name="models" />
     </key>
@@ -239,7 +236,8 @@
       <workItem from="1697796911491" duration="75000" />
       <workItem from="1697796997981" duration="10615000" />
       <workItem from="1697900945536" duration="299000" />
-      <workItem from="1697901264540" duration="19105000" />
+      <workItem from="1697901264540" duration="19435000" />
+      <workItem from="1698048453942" duration="25643000" />
     </task>
     <servers />
   </component>

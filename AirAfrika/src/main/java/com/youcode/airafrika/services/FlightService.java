@@ -48,6 +48,7 @@ public class FlightService {
     public boolean updateFlight(Flight newFlight) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
+            System.out.println("flight object to update: " + newFlight.toString());
             Flight oldFlight = session.get(Flight.class, newFlight.getUuid());
             if(oldFlight == null)
                 return false;

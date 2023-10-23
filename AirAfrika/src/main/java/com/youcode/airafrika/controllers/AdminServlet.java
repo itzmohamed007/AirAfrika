@@ -30,7 +30,7 @@ public class AdminServlet extends HttpServlet {
 
         if(adminService.login(email, password)) {
             req.getSession().setAttribute("isAuthenticated", true);
-            req.getRequestDispatcher("/views/admin/flights.jsp").forward(req, resp);
+            resp.sendRedirect(req.getContextPath() + "/flight?action=list");
         } else {
             req.getSession().setAttribute("isAuthenticated", false);
             req.setAttribute("credentials", false);
