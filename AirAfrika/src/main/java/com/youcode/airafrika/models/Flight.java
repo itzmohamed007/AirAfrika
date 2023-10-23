@@ -46,8 +46,8 @@ public class Flight {
 
     @ManyToMany
     @JoinTable(name = "stopover_flight",
-            joinColumns = @JoinColumn(name = "flight_id"),
-            inverseJoinColumns = @JoinColumn(name = "stopover_id")
+            joinColumns = @JoinColumn(name = "flight_uuid"),
+            inverseJoinColumns = @JoinColumn(name = "stopover_uuid")
     )
     private Set<Stopover> stopovers = new HashSet<>();
 

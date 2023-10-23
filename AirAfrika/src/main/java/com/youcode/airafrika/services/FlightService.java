@@ -2,6 +2,7 @@ package com.youcode.airafrika.services;
 
 import com.youcode.airafrika.models.Flight;
 import com.youcode.airafrika.utils.HibernateUtil;
+import com.youcode.airafrika.utils.LocalStorage;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -47,6 +48,7 @@ public class FlightService {
     public boolean updateFlight(Flight newFlight) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
+            System.out.println("flight object to update: " + newFlight.toString());
             Flight oldFlight = session.get(Flight.class, newFlight.getUuid());
             if(oldFlight == null)
                 return false;
@@ -74,6 +76,7 @@ public class FlightService {
         } catch (Exception e) {
             System.out.println("something went wrong while deleting flight record");
             System.out.println(e.getMessage());
+            e.printStackTrace();
             return false;
         }
     }
@@ -89,6 +92,7 @@ public class FlightService {
         } catch (Exception e) {
             System.out.println("something went wrong while fetching flights records");
             System.out.println(e.getMessage());
+            e.printStackTrace();
             return null;
         }
     }

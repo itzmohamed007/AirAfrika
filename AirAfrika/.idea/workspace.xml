@@ -10,12 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d18cf12d-36dc-4b35-806c-06c7434c7486" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/success.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/Testing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/AdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/AdminServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/FlightServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/flight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/flight.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/create-flight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/create-flight.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/flights.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/flights.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/update-flight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/update-flight.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -52,40 +60,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;37f0d343-da73-48f7-8d4d-90452fbede03&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;servlets&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/adm/Desktop/AirAfrika/AirAfrika/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JPA.DatabaseSchemaImportDialog": "37f0d343-da73-48f7-8d4d-90452fbede03",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "public",
+    "git-widget-placeholder": "admin",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "C:/Users/adm/Desktop/AirAfrika/AirAfrika/src/main/java",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adm\Desktop\AirAfrika\AirAfrika\src\main\webapp\views\admin" />
       <recent name="C:\Users\adm\Desktop\AirAfrika\AirAfrika\src\main\resources" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="" />
       <recent name="com.youcode.airafrika.models" />
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Testing">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.13">
     <configuration name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.youcode.airafrika.Testing" />
       <module name="AirAfrika" />
@@ -99,8 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="login.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/airafrika/views/admin/login.jsp">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 10.1.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.13" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="update-resources" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="AirAfrika:war exploded">
           <settings>
@@ -186,8 +202,14 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Testing" />
+      <item itemvalue="JavaScript Debug.login.jsp" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.13" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.login.jsp" />
         <item itemvalue="Application.Testing" />
       </list>
     </recent_temporary>
@@ -208,7 +230,14 @@
       <workItem from="1697480129055" duration="14399000" />
       <workItem from="1697653273350" duration="4584000" />
       <workItem from="1697706018845" duration="9280000" />
-      <workItem from="1697724834237" duration="3868000" />
+      <workItem from="1697724834237" duration="5867000" />
+      <workItem from="1697748205395" duration="599000" />
+      <workItem from="1697790913874" duration="3537000" />
+      <workItem from="1697796911491" duration="75000" />
+      <workItem from="1697796997981" duration="10615000" />
+      <workItem from="1697900945536" duration="299000" />
+      <workItem from="1697901264540" duration="19435000" />
+      <workItem from="1698048453942" duration="25643000" />
     </task>
     <servers />
   </component>

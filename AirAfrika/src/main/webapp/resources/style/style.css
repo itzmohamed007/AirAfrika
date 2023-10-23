@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.bg-blur {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+.login-background .login-form-wrapper .wrong-credentials {
+  width: 100%;
+  padding: 2px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+.login-background {
+  background-image: url("../images/flight.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-background .login-form-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.login-background .login-form-wrapper form {
+  padding: 3rem;
+  background-color: lavender;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  justify-content: center;
+  font-weight: lighter;
+}
+.input-group input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  outline: none;
+}
+.input-group textarea {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  outline: none;
+  resize: none;
+  height: 100px;
+}
+.input-group input::placeholder {
+  font-weight: lighter;
+}
+.input-group input:focus {
+  outline: mediumpurple;
+  border: 1px solid mediumpurple;
+}
+.submit {
+  width: 100%;
+  background: linear-gradient(to right, mediumpurple, purple);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.submit:hover {
+  background: linear-gradient(to right, purple, mediumpurple);
+  transition-property: background;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.flight-form-background {
+  background-image: url("../images/flight.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.flight-form-background .flight-form-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  overflow-x: auto;
+}
+.flight-form-background .flight-form-wrapper .form-content {
+  padding: 3rem;
+  background-color: lavender;
+  border: none;
+  border-radius: 25px;
+  width: fit-content;
+  margin: 5rem auto;
+}
+.flight-form-background .flight-form-wrapper .form-content h1 {
+  margin-bottom: 1rem;
+}
+.flight-form-background .flight-form-wrapper form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .login-background .login-form-wrapper form {
+    width: 80%;
+  }
+  .input-group input {
+    width: 100%;
+  }
+}

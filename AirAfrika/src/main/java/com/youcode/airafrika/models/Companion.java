@@ -3,13 +3,14 @@ package com.youcode.airafrika.models;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 @Entity
 public class Companion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "uuid")
-    private String uuid;
+    private UUID uuid;
     @Basic
     @Column(name = "first_name")
     private String firstName;
@@ -25,11 +26,11 @@ public class Companion {
     @ManyToOne
     private Reservation reservation;
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 
-    public void setUuid(String uuid) {
+    public void setUuid(UUID uuid) {
         this.uuid = uuid;
     }
 

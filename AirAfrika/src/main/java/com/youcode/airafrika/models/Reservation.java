@@ -5,13 +5,14 @@ import jakarta.persistence.*;
 import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @Entity
 public class Reservation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "uuid")
-    private String uuid;
+    private UUID uuid;
     @Basic
     @Column(name = "date")
     private LocalTime date;
@@ -28,16 +29,16 @@ public class Reservation {
 
     @ManyToMany
     @JoinTable(name = "reservation_extra",
-            joinColumns = @JoinColumn(name = "reservation_id"),
-            inverseJoinColumns = @JoinColumn(name = "extra_id")
+            joinColumns = @JoinColumn(name = "reservation_uuid"),
+            inverseJoinColumns = @JoinColumn(name = "extra_uuid")
     )
     private Set<Extra> extras = new HashSet<>();
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 
-    public void setUuid(String uuid) {
+    public void setUuid(UUID uuid) {
         this.uuid = uuid;
     }
 
@@ -73,7 +74,7 @@ public class Reservation {
         this.flight = flight;
     }
 
-    public Object getClient() {
+    public Client getClient() {
         return client;
     }
 

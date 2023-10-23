@@ -14,10 +14,8 @@
         <mapping class="com.youcode.airafrika.models.Client"/>
         <mapping class="com.youcode.airafrika.models.Companion"/>
         <mapping class="com.youcode.airafrika.models.Extra"/>
-        <mapping class="com.youcode.airafrika.models.ExtraService"/>
         <mapping class="com.youcode.airafrika.models.Flight"/>
         <mapping class="com.youcode.airafrika.models.Reservation"/>
         <mapping class="com.youcode.airafrika.models.Stopover"/>
-
     </session-factory>
 </hibernate-configuration>
