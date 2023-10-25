@@ -2,7 +2,6 @@ package com.youcode.airafrika.controllers;
 
 import com.youcode.airafrika.models.Flight;
 import com.youcode.airafrika.services.FlightService;
-import jakarta.servlet.Servlet;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -93,6 +92,7 @@ public class FlightServlet extends HttpServlet {
     @Override
     public void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Flight flight = extractFlight(request);
+        flight.setUuid(UUID.fromString(request.getParameter("uuid"))); // extracting uuid because it is not extracted in extractFlight method
         if(flightService.updateFlight(flight))
             response.sendRedirect(request.getContextPath() + "/views/admin/success.jsp");
         else
@@ -119,8 +119,6 @@ public class FlightServlet extends HttpServlet {
 
     private Flight extractFlight(HttpServletRequest request) {
         Flight flight = new Flight();
-        flight.setUuid(UUID.fromString(request.getParameter("uuid")));
-        UUID uuid = UUID.fromString(request.getParameter("uuid"));
         flight.setDepartureCity(request.getParameter("departure-city"));
         flight.setArrivalCity(request.getParameter("arrival-city"));
         flight.setDepartureDate(LocalDate.parse(request.getParameter("departure-date")));

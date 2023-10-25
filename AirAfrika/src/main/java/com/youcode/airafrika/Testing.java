@@ -1,12 +1,8 @@
 package com.youcode.airafrika;
 
-import com.youcode.airafrika.models.Flight;
 import com.youcode.airafrika.services.AdminService;
-import com.youcode.airafrika.services.FlightService;
 
-import java.util.List;
 import java.util.Scanner;
-import java.util.UUID;
 
 public class Testing {
     // Created for testing

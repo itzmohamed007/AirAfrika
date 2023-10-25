@@ -1,8 +1,6 @@
 package com.youcode.airafrika.models;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.Generated;
-import org.hibernate.annotations.GenerationTime;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

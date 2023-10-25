@@ -1,4 +1,4 @@
-package com.youcode.airafrika.utils;
+package com.youcode.airafrika.Utilities;
 
 import java.util.Properties;
 

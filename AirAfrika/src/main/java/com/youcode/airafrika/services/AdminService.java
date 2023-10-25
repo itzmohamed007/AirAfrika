@@ -1,14 +1,10 @@
 package com.youcode.airafrika.services;
 
 import com.youcode.airafrika.models.Admin;
-import com.youcode.airafrika.models.Flight;
-import com.youcode.airafrika.models.User;
-import com.youcode.airafrika.utils.HibernateUtil;
-import com.youcode.airafrika.utils.LocalStorage;
+import com.youcode.airafrika.Utilities.HibernateUtil;
+import com.youcode.airafrika.Utilities.LocalStorage;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.query.Query;
-
 public class AdminService {
     private final SessionFactory sessionFactory;
 

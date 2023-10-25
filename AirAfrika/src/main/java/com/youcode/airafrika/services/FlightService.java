@@ -1,8 +1,7 @@
 package com.youcode.airafrika.services;
 
 import com.youcode.airafrika.models.Flight;
-import com.youcode.airafrika.utils.HibernateUtil;
-import com.youcode.airafrika.utils.LocalStorage;
+import com.youcode.airafrika.Utilities.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
