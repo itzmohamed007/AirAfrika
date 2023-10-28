@@ -14,7 +14,7 @@ contentType="text/html;charset=UTF-8" language="java" %>
         <form action="<%=request.getContextPath()%>/login" method="post">
           <h1>Login</h1>
           <c:if test="${credentials eq false}">
-            <p class="wrong-credentials">Wrong credentials</p>
+            <p class="error-message">Wrong credentials</p>
           </c:if>
           <div class="input-group">
             <label>Enter Email</label>
@@ -28,7 +28,7 @@ contentType="text/html;charset=UTF-8" language="java" %>
               placeholder="Enter Password"
             />
           </div>
-          <button class="submit">Submit</button>
+          <button class="submit" style="width: 100%">Submit</button>
         </form>
       </div>
     </div>

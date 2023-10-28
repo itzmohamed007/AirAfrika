@@ -17,7 +17,7 @@ public class Companion {
     @Basic
     @Column(name = "last_name")
     private String lastName;
-    @Basic
+    @Enumerated(EnumType.STRING)
     @Column(name = "gender")
     private Gender gender;
     @Basic

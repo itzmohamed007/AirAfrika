@@ -2,11 +2,9 @@ package com.youcode.airafrika.DAOimplementation;
 
 import com.youcode.airafrika.Utilities.HibernateUtil;
 import com.youcode.airafrika.dao.Dao;
-import com.youcode.airafrika.models.Flight;
 import com.youcode.airafrika.models.Reservation;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.query.Query;
 
 import java.util.List;
 import java.util.UUID;

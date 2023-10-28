@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.hibernate.dialect.pagination.OffsetFetchLimitHandler;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -53,6 +54,10 @@ public class FlightServlet extends HttpServlet {
                     }
                     break;
                 }
+                case "search": {
+                    response.sendRedirect(request.getContextPath() + "/views/reservation/search-flight.jsp");
+                    break;
+                }
                 default:
                     response.sendError(HttpServletResponse.SC_BAD_REQUEST);
                     break;
@@ -72,6 +77,16 @@ public class FlightServlet extends HttpServlet {
                     response.sendRedirect(request.getContextPath() + "/views/admin/success.jsp");
                 else
                     response.sendRedirect(request.getContextPath() + "/views/admin/error.jsp");
+                break;
+            }
+            case "search": {
+                Flight flight = new Flight();
+                flight.setDepartureCity(request.getParameter("departure-city"));
+                flight.setArrivalCity(request.getParameter("arrival-city"));
+                flight.setDepartureDate(LocalDate.parse(request.getParameter("departure-date")));
+                flight.setArrivalDate(LocalDate.parse(request.getParameter("arrival-date")));
+                request.setAttribute("flights", flightService.search(flight));
+                request.getRequestDispatcher("/views/reservation/available-flights.jsp").forward(request, response);
                 break;
             }
             case "update": {

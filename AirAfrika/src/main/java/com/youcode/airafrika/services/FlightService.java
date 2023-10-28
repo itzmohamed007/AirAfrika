@@ -36,4 +36,8 @@ public class FlightService {
     public boolean deleteFlight(UUID uuid) {
         return flightDAO.delete(uuid);
     }
+
+    public List<Flight> search(Flight flight) {
+        return flightDAO.search(flight);
+    }
 }

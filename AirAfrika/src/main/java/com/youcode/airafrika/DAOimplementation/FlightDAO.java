@@ -99,4 +99,28 @@ public class FlightDAO implements Dao<Flight> {
             return false;
         }
     }
+
+    public List<Flight> search(Flight flight) {
+        try(Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            String hql = "FROM Flight F " +
+                    "WHERE F.departureCity = :departureCity " +
+                    "AND F.arrivalCity = :arrivalCity " +
+                    "AND F.departureDate <= :departureDate " +
+                    "AND F.arrivalDate >= :arrivalDate";
+            List<Flight> flights = session.createQuery(hql, Flight.class)
+                    .setParameter("departureCity", flight.getDepartureCity())
+                    .setParameter("arrivalCity", flight.getArrivalCity())
+                    .setParameter("departureDate", flight.getDepartureDate())
+                    .setParameter("arrivalDate", flight.getDepartureDate())
+                    .list();
+            session.getTransaction().commit();
+            return flights;
+        } catch (Exception e) {
+            System.out.println("something went wrong while searching flight");
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

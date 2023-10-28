@@ -42,6 +42,21 @@ public class Flight {
     @Column(name = "price")
     private double price;
 
+    public Flight() {
+    }
+
+    public Flight(String departureCity, String arrivalCity, LocalDate departureDate, LocalDate arrivalDate, LocalTime departureTime, LocalTime arrivalTime, int seatsNumber, String description, double price) {
+        this.departureCity = departureCity;
+        this.arrivalCity = arrivalCity;
+        this.departureDate = departureDate;
+        this.arrivalDate = arrivalDate;
+        this.departureTime = departureTime;
+        this.arrivalTime = arrivalTime;
+        this.seatsNumber = seatsNumber;
+        this.description = description;
+        this.price = price;
+    }
+
     @ManyToMany
     @JoinTable(name = "stopover_flight",
             joinColumns = @JoinColumn(name = "flight_uuid"),
