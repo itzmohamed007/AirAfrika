@@ -2,8 +2,6 @@ package com.youcode.airafrika.models;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
-
 @Entity
 @Table(name = "admin")
 public class Admin extends User {

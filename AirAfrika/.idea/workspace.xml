@@ -10,17 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d18cf12d-36dc-4b35-806c-06c7434c7486" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/ReservationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/flight2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/reservation/available-flights.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/reservation/reservation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/reservation/reservations.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/reservation/search-flight.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/AdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/AdminServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/DAOimplementation/FlightDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/DAOimplementation/FlightDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/DAOimplementation/ReservationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/DAOimplementation/ReservationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/controllers/FlightServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Companion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Companion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/models/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/FlightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/airafrika/services/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/create-flight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/create-flight.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/flights.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/flights.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/update-flight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/update-flight.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +40,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -60,32 +71,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JPA.DatabaseSchemaImportDialog": "37f0d343-da73-48f7-8d4d-90452fbede03",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "public",
-    "git-widget-placeholder": "admin",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "C:/Users/adm/Desktop/AirAfrika/AirAfrika/src/main/java",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;37f0d343-da73-48f7-8d4d-90452fbede03&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;admin&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/adm/Desktop/AirAfrika/AirAfrika/src/main/java&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\adm\Desktop\AirAfrika\AirAfrika\src\main\webapp\views\admin" />
@@ -202,15 +214,56 @@
         </option>
       </method>
     </configuration>
+    <configuration name="flights.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 10.1.13" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/views/admin/flights.jsp" />
+      <deployment>
+        <artifact name="AirAfrika:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/AirAfrika_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="70c2e8f4-f8b3-4700-93c4-b31740a198ad" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="AirAfrika:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Testing" />
       <item itemvalue="JavaScript Debug.login.jsp" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.13" />
+      <item itemvalue="Tomcat Server.flights.jsp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.login.jsp" />
+        <item itemvalue="Tomcat Server.flights.jsp" />
         <item itemvalue="Application.Testing" />
+        <item itemvalue="JavaScript Debug.login.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -237,11 +290,19 @@
       <workItem from="1697796997981" duration="10615000" />
       <workItem from="1697900945536" duration="299000" />
       <workItem from="1697901264540" duration="19435000" />
-      <workItem from="1698048453942" duration="25643000" />
+      <workItem from="1698048453942" duration="26138000" />
+      <workItem from="1698135416127" duration="10752000" />
+      <workItem from="1698221374370" duration="13626000" />
+      <workItem from="1698246207763" duration="3570000" />
+      <workItem from="1698256963419" duration="17621000" />
+      <workItem from="1698394971351" duration="17183000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

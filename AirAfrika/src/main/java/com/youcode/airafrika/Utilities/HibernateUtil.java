@@ -1,4 +1,4 @@
-package com.youcode.airafrika.utils;
+package com.youcode.airafrika.Utilities;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;

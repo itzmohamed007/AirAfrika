@@ -2,6 +2,7 @@ package com.youcode.airafrika.models;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Set;
@@ -15,8 +16,8 @@ public class Reservation {
     private UUID uuid;
     @Basic
     @Column(name = "date")
-    private LocalTime date;
-    @Basic
+    private LocalDate date;
+    @Enumerated(EnumType.STRING)
     @Column(name = "status")
     private ReservationStatus status;
     @Basic
@@ -34,6 +35,31 @@ public class Reservation {
     )
     private Set<Extra> extras = new HashSet<>();
 
+    public Reservation() {
+
+    }
+
+    public Reservation(LocalDate date, ReservationStatus status, int seatsNumber, Flight flight, Client client) {
+        this.date = date;
+        this.status = status;
+        this.seatsNumber = seatsNumber;
+        this.flight = flight;
+        this.client = client;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "uuid=" + uuid +
+                ", date=" + date +
+                ", status=" + status +
+                ", seatsNumber=" + seatsNumber +
+                ", flight=" + flight +
+                ", client=" + client +
+                ", extras=" + extras +
+                '}';
+    }
+
     public UUID getUuid() {
         return uuid;
     }
@@ -42,11 +68,11 @@ public class Reservation {
         this.uuid = uuid;
     }
 
-    public LocalTime getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(LocalTime date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

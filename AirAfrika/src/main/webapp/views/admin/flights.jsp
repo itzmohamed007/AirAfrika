@@ -9,7 +9,7 @@
     <h1>List of all flights</h1>
     <a href="<%= request.getContextPath() %>/flight?action=create">Create Flight</a>
     <br>
-    <a href="<%= request.getContextPath() %>/flight?action=update">Update Flight</a>
+    <a href="<%= request.getContextPath() %>/views/reservation/search-flight.jsp">Search Flight</a>
     <br>
     <table border="1">
       <tr>
